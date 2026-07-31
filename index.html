@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>مشهد، مسجّل الشاشة بتكبير سلس</title>
+<meta name="description" content="مشهد: مسجّل شاشة عربيّ مع تكبير سلس يتتبّع المؤشر، تنقية لضوضاء الميكروفون، كاميرا بخلفية قابلة للتمويه، ومحرّر استوديو. لويندوز وماك ولينكس.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div class="site">
+
+  <header class="nav">
+    <div class="wrap nav-in">
+      <a class="brand" href="#top">
+        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="16" y="16" width="480" height="480" rx="112" fill="#FFFFFF" stroke="#D6DEE6" stroke-width="2"/><rect x="104" y="120" width="304" height="272" rx="52" fill="#E7ECF1" stroke="#1A2530" stroke-width="12"/><path d="M226 198 L226 314 L312 256 Z" fill="#2C3E50" stroke="#1A2530" stroke-width="10" stroke-linejoin="round"/><circle cx="350" cy="178" r="15" fill="#E23B2E"/></svg>
+        <span>مشهد</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#features">المميّزات</a>
+        <a href="#shots">لقطات</a>
+        <a href="download.html">التنزيل</a>
+      </nav>
+      <a class="btn btn-gold" href="download.html">تنزيل مجّاني</a>
+    </div>
+  </header>
+
+  <a id="top"></a>
+  <main class="wrap">
+
+    <div class="warn-box">
+      <span class="tb-ic" aria-hidden="true">⚠️</span>
+      <span><b>تنبيه:</b> نرجو أن تستخدم «مشهد» فيما يُرضي الله سبحانه وتعالى، ونحن نتبرّأ إلى الله من كلّ استخدامٍ فيه معصية أو ما يُغضبه.</span>
+    </div>
+
+    <section class="hero">
+      <div>
+        <span class="eyebrow"><span class="d"></span> مسجّل شاشة بتكبير سلس</span>
+        <h1>كل منتج يستحقّ <span class="hl">مشهدًا</span> مثاليًّا.</h1>
+        <p class="lead">«مشهد» يسجّل شاشتك ويتتبّع حركة المؤشر ونقراته، ثمّ يضيف تكبيرًا سلسًا في محرّر مدمج، مع تنقية لضوضاء الميكروفون وكاميرا بخلفية قابلة للتمويه. عربيّ بالكامل، ويعمل على ويندوز وماك ولينكس.</p>
+
+        <!-- OS-aware direct download -->
+        <div class="cta">
+          <a class="btn btn-gold btn-dl" id="heroDownload" href="download.html">
+            <span class="dl-ico" aria-hidden="true">⬇</span>
+            <span class="dl-text">
+              <span class="dl-label" id="heroBtnLabel">تنزيل «مشهد»</span>
+              <span class="dl-file" id="heroFileRow" hidden><span class="fname" id="heroFileName">…</span> <span class="fsize" id="heroFileSize"></span></span>
+            </span>
+          </a>
+        </div>
+
+        <!-- mac: brew (shown by JS on macOS) -->
+        <div class="brewbox" id="heroBrew" hidden>
+          <span class="brew-lb">أو ثبّته وحدّثه عبر Homebrew:</span>
+          <div class="brew">
+            <code id="brewCmd" style="white-space:pre-line">…</code>
+            <button type="button" class="copy" id="brewCopy">نسخ</button>
+          </div>
+        </div>
+
+        <a class="mini-link" href="download.html">تنزيل لنظام تشغيل آخر <span class="arw" aria-hidden="true">←</span></a>
+
+        <div class="trust">
+          <span>✓ مجّاني ومفتوح للاستخدام</span>
+          <span>✓ تحديث تلقائي داخل التطبيق</span>
+          <span>✓ بدون حساب</span>
+        </div>
+      </div>
+
+      <div class="window" role="img" aria-label="معاينة لتطبيق «مشهد» أثناء تسجيل الشاشة، مع تكبير سلس يتتبّع المؤشر وفقاعة كاميرا.">
+        <div class="win-bar"><span class="tl r"></span><span class="tl y"></span><span class="tl g"></span><span class="win-title">مشهد، تسجيل الشاشة</span></div>
+        <div class="app">
+          <div class="app-top">
+            <span class="app-logo"></span>
+            <span class="app-name">مشهد</span>
+            <span class="grow"></span>
+            <span class="pill-rec"><span class="dot"></span> 00:42 · جارٍ التسجيل</span>
+            <span class="chip">Ctrl+Shift+R</span>
+          </div>
+          <div class="tabs"><span class="tab on">الشاشات</span><span class="tab">النوافذ</span><span class="tab">الكاميرا</span></div>
+          <div class="stage">
+            <div class="code-lines"><i class="cl" style="width:60%"></i><i class="cl" style="width:80%"></i><i class="cl" style="width:45%"></i><i class="cl" style="width:70%"></i><i class="cl" style="width:55%"></i></div>
+            <div class="zoom-ring"><svg class="ptr" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 2 L4 19 L8.5 14.5 L11.5 21 L14 20 L11 13.5 L18 13.5 Z"/></svg></div>
+            <div class="cam-bubble" title="الكاميرا"><svg class="avatar" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="25" r="12"/><path d="M12 56c0-11 9-19 20-19s20 8 20 19Z"/></svg></div>
+          </div>
+          <div class="settings">
+            <div class="fld"><div class="lb">المنصّة / النسبة</div><div class="vl">يوتيوب 16:9</div></div>
+            <div class="fld"><div class="lb">جودة التسجيل</div><div class="vl">جودة عالية</div></div>
+            <div class="fld"><div class="lb">معدّل الإطارات</div><div class="vl">60 إطار/ث</div></div>
+            <div class="fld"><div class="lb">الميكروفون</div><div class="vl">مفعّل</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <section id="shots">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kick">من داخل التطبيق</span>
+        <h2>واجهة عربيّة بالكامل، من التسجيل إلى المونتاج</h2>
+        <p>معاينات لواجهة «مشهد» الفعليّة: شاشة التسجيل بخياراتها، والاستوديو بالمخطّط الزمني والتكبير السلس.</p>
+      </div>
+      <div class="shots">
+
+        <figure class="shot">
+          <div class="window" role="img" aria-label="شاشة التسجيل في «مشهد»: اختيار الشاشة أو النافذة أو الكاميرا، مع خيارات الميكروفون والجودة والخلفية قبل بدء التسجيل.">
+            <div class="win-bar" aria-hidden="true"><span class="tl r"></span><span class="tl y"></span><span class="tl g"></span><span class="win-title">مشهد، التسجيل</span></div>
+            <div class="app">
+              <div class="app-top"><span class="app-logo"></span><span class="app-name">مشهد</span><span class="grow"></span><span class="app-btn">● بدء التسجيل</span></div>
+              <div class="tabs"><span class="tab on">الشاشات</span><span class="tab">النوافذ</span><span class="tab">الكاميرا</span><span class="chip" style="margin-inline-start:auto">↻ تحديث</span></div>
+              <div class="stage" style="height:150px">
+                <div class="code-lines"><i class="cl" style="width:65%"></i><i class="cl" style="width:50%"></i><i class="cl" style="width:78%"></i><i class="cl" style="width:40%"></i></div>
+                <svg class="ptr ptr-abs" style="right:120px;top:70px" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 2 L4 19 L8.5 14.5 L11.5 21 L14 20 L11 13.5 L18 13.5 Z"/></svg>
+                <div class="cam-bubble" style="width:54px;height:54px" title="الكاميرا"><svg class="avatar" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="25" r="12"/><path d="M12 56c0-11 9-19 20-19s20 8 20 19Z"/></svg></div>
+              </div>
+              <div class="settings" style="grid-template-columns:repeat(3,1fr)">
+                <div class="fld"><div class="lb">الميكروفون</div><div class="vl">جهاز افتراضي</div></div>
+                <div class="fld"><div class="lb">جودة التسجيل</div><div class="vl">متوازن</div></div>
+                <div class="fld"><div class="lb">الخلفية</div><div class="vl">تمويه</div></div>
+              </div>
+            </div>
+          </div>
+          <figcaption class="cap"><h3>التقاط ذكيّ</h3><p>اختر الشاشة أو النافذة أو الكاميرا، واضبط النسبة (يوتيوب، شورتس، مربّع)، وتُتتبَّع نقرات المؤشر تلقائيًا.</p></figcaption>
+        </figure>
+
+        <figure class="shot">
+          <div class="window" role="img" aria-label="استوديو المونتاج في «مشهد»: مخطّط زمني مع مقاطع وتكبير سلس يتتبّع المؤشر.">
+            <div class="win-bar" aria-hidden="true"><span class="tl r"></span><span class="tl y"></span><span class="tl g"></span><span class="win-title">مشهد، الاستوديو</span></div>
+            <div class="ed-body">
+              <div class="ed-canvas">
+                <span class="badge">تكبير سلس · يتتبّع المؤشر</span>
+                <div class="ed-play"></div>
+              </div>
+              <div class="timeline">
+                <div class="ruler"></div>
+                <div class="track playhead">
+                  <span class="clip"></span><span class="clip z" title="تكبير"></span><span class="clip"></span><span class="clip z"></span><span class="clip"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <figcaption class="cap"><h3>استوديو للمونتاج</h3><p>مخطّط زمني غير خطّي: قصّ، إعادة ترتيب بالسحب، خمسة انتقالات، وتكبير سلس يُضاف بنقرة، ثمّ تصدير متعدّد الصيغ.</p></figcaption>
+        </figure>
+
+      </div>
+      <p class="note-real">↑ معاينات مبنيّة على واجهة التطبيق الفعليّة. يمكن استبدالها بلقطات شاشة حقيقيّة في <code style="font-family:Consolas,monospace;font-size:12px">site/</code>.</p>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kick">كل مميّزات «مشهد»</span>
+        <h2>كل ما تحتاجه، للتسجيل وللاستوديو</h2>
+        <p>قائمة كاملة بما يقدّمه «مشهد»، مقسّمة بين أدوات التسجيل وأدوات المونتاج في الاستوديو.</p>
+      </div>
+
+      <div class="checks">
+
+        <div class="check-col">
+          <div class="col-head">
+            <span class="col-ic">🔴</span>
+            <h3>التسجيل</h3>
+          </div>
+          <p class="col-sub">من التقاط الشاشة حتّى الصوت والكاميرا.</p>
+          <ul class="check-list">
+            <li><span class="ck" aria-hidden="true">✓</span><span class="tx"><b>تكبير سلس يتتبّع المؤشر</b><span>يتابع مؤشرك عالميًّا ويكبّر بنعومة نحو ما تفعله.</span></span></li>
+            <li><span class="ck" aria-hidden="true">✓</span><span class="tx"><b>تتبّع نقرات المؤشر تلقائيًّا</b><span>كل نقرة تُسجَّل لتوليد لحظات التكبير في الاستوديو.</span></span></li>
+            <li><span class="ck" aria-hidden="true">✓</span><span class="tx"><b>التقاط الشاشة أو النافذة أو الكاميرا</b><span>اختر ما تسجّله بنقرة واحدة قبل البدء.</span></span></li>
+            <li><span class="ck" aria-hidden="true">✓</span><span class="tx"><b>تنقية ضوضاء الميكروفون</b><span>فلترة وخفض ضوضاء وضغط وتطبيع تلقائيّ للصوت.</span></span></li>
+            <li><span class="ck" aria-hidden="true">✓</span><span class="tx"><b>كاميرا بخلفية قابلة للتمويه</b><span>فقاعة كاميرا قابلة للسحب مع تمويه أو استبدال الخلفية.</span></span></li>
+            <li><span class="ck" aria-hidden="true">✓</span><span class="tx"><b>ضبط نسبة المنصّة</b><span>يوتيوب 16:9، شورتس/ريلز عموديّ، أو مربّع.</span></span></li>
+            <li><span class="ck" aria-hidden="true">✓</span><span class="tx"><b>اختصارات لوحة المفاتيح</b><span>ابدأ التسجيل وأوقفه دون مغادرة شاشتك.</span></span></li>
+          </ul>
+        </div>
+
+        <div class="check-col">
+          <div class="col-head">
+            <span class="col-ic">🎬</span>
+            <h3>الاستوديو</h3>
+          </div>
+          <p class="col-sub">مونتاج وتصدير جاهز لكلّ منصّة.</p>
+          <ul class="check-list">
+            <li><span class="ck" aria-hidden="true">✓</span><span class="tx"><b>مخطّط زمني غير خطّي</b><span>رتّب مقاطعك بحرّية على مسار زمنيّ مرن.</span></span></li>
+            <li><span class="ck" aria-hidden="true">✓</span><span class="tx"><b>قصّ وإعادة ترتيب بالسحب</b><span>حرّك المقاطع واقصصها مباشرة على المخطّط.</span></span></li>
+            <li><span class="ck" aria-hidden="true">✓</span><span class="tx"><b>تكبير سلس يُضاف بنقرة</b><span>أضِف لحظات التكبير أو عدّلها في أيّ وقت.</span></span></li>
+            <li><span class="ck" aria-hidden="true">✓</span><span class="tx"><b>خمسة انتقالات بين المقاطع</b><span>انتقالات ناعمة تربط لقطاتك بسلاسة.</span></span></li>
+            <li><span class="ck" aria-hidden="true">✓</span><span class="tx"><b>تراجع وإعادة</b><span>جرّب بلا قلق، كل خطوة قابلة للتراجع.</span></span></li>
+            <li><span class="ck" aria-hidden="true">✓</span><span class="tx"><b>قوالب تصدير لكلّ منصّة</b><span>يوتيوب وشورتس/ريلز والمربّع والعموديّ جاهزة.</span></span></li>
+            <li><span class="ck" aria-hidden="true">✓</span><span class="tx"><b>تصدير متعدّد الصيغ بجودة عالية</b><span>صدّر بإعدادات جودة عالية للتحرير والنشر.</span></span></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="wrap">
+      <h2>جاهز تبدأ؟ نزّل «مشهد» الآن</h2>
+      <p id="bandOsLine">مجّاني، بدون حساب، وبتحديث تلقائيّ داخل التطبيق.</p>
+      <div class="cta">
+        <a class="btn btn-gold btn-dl" id="bandDownload" href="download.html">
+          <span class="dl-ico" aria-hidden="true">⬇</span>
+          <span class="dl-text">
+            <span class="dl-label" id="bandBtnLabel">تنزيل «مشهد»</span>
+            <span class="dl-file" id="bandFileRow" hidden><span class="fname" id="bandFileName">…</span> <span class="fsize" id="bandFileSize"></span></span>
+          </span>
+        </a>
+      </div>
+      <a class="mini-link" href="download.html">كل خيارات التنزيل والأنظمة <span class="arw" aria-hidden="true">←</span></a>
+    </div>
+  </section>
+
+  <footer class="ft">
+    <div class="wrap ft-support">
+      هل تحتاج أيّ مساعدة؟ راسِلنا على <a href="mailto:support@mashhad.io">support@mashhad.io</a>
+    </div>
+    <div class="wrap ft-in">
+      <a class="brand" href="#top" style="font-size:17px"><svg viewBox="0 0 512 512" width="30" height="30" aria-hidden="true"><rect x="16" y="16" width="480" height="480" rx="112" fill="#FFFFFF" stroke="#D6DEE6" stroke-width="2"/><rect x="104" y="120" width="304" height="272" rx="52" fill="#E7ECF1" stroke="#1A2530" stroke-width="12"/><path d="M226 198 L226 314 L312 256 Z" fill="#2C3E50" stroke="#1A2530" stroke-width="10" stroke-linejoin="round"/><circle cx="350" cy="178" r="15" fill="#E23B2E"/></svg> مشهد</a>
+      <span class="grow"></span>
+      <a href="download.html">التنزيل</a>
+      <span>© <span id="yr">1448</span> مشهد</span>
+    </div>
+  </footer>
+
+</div>
+
+<script src="release.js"></script>
+<script src="analytics.js"></script>
+<script>
+(function(){
+  var os = MASHHAD.detectOS();
+  var f = MASHHAD.FILES[os] || MASHHAD.FILES.win;
+  var label = "تنزيل «مشهد» ل" + MASHHAD.LABELS[os];
+
+  function wire(btnId, labelId, rowId, nameId, sizeId){
+    var btn = document.getElementById(btnId);
+    if(btn){ btn.setAttribute("href", f.url); }
+    var lb = document.getElementById(labelId);
+    if(lb){ lb.textContent = label; }
+    var row = document.getElementById(rowId);
+    if(row){ row.hidden = false; }
+    var nm = document.getElementById(nameId);
+    if(nm){ nm.textContent = f.name; }
+    if(sizeId){ var sz = document.getElementById(sizeId); if(sz && f.size){ sz.textContent = "· " + f.size; } }
+  }
+
+  wire("heroDownload","heroBtnLabel","heroFileRow","heroFileName","heroFileSize");
+  wire("bandDownload","bandBtnLabel","bandFileRow","bandFileName","bandFileSize");
+
+  // macOS: reveal brew option
+  if(os === "mac"){
+    var brew = document.getElementById("heroBrew");
+    if(brew){ brew.hidden = false; }
+    var cmd = document.getElementById("brewCmd");
+    if(cmd){ cmd.textContent = MASHHAD.BREW; }
+    var line = document.getElementById("bandOsLine");
+    if(line){ line.textContent = "على ماك: نزّل ملف ‎.dmg مباشرة أو ثبّته عبر Homebrew، الطريقتان مدعومتان."; }
+  }
+
+  // copy brew command
+  var copyBtn = document.getElementById("brewCopy");
+  if(copyBtn){
+    copyBtn.addEventListener("click", function(){
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(MASHHAD.BREW).then(function(){
+          var old = copyBtn.textContent; copyBtn.textContent = "✓ نُسخ";
+          setTimeout(function(){ copyBtn.textContent = old; }, 1600);
+        });
+      }
+    });
+  }
+
+  // Hijri year (Umm al-Qura), Latin digits. Falls back to the value in the markup
+  // if Intl lacks the calendar.
+  var yr = document.getElementById("yr");
+  if(yr){
+    try {
+      var h = new Intl.DateTimeFormat("en-u-ca-islamic-umalqura",{year:"numeric"}).format(new Date()).replace(/[^0-9]/g,"");
+      if(h){ yr.textContent = h; }
+    } catch(_){}
+  }
+})();
+</script>
+</body>
+</html>
